@@ -14,6 +14,7 @@
 <body>
     <div id="container"></div>
     <script>
+        //Append 12 images to the container (it's the game board)...
         var $container = $('#container') 
         $container.css({width: '550px', height: '550px', background: 'green'})
 
@@ -53,9 +54,17 @@
         var $brusselSprouts1 = $('<img src="images/Brussel_Sprouts.png">')
         $container.append($brusselSprouts1)
 
+        //Generate 12 boxes to include the game elements...
+        // for(var i = 0; i < 12; i += 1) {
+        //      $container.append('<div class="box"></div>')
+        //}
+        //var $boxes = $('.box')
+
         var $veggies = $( ['tomato1', 'cucumber1', 'redPepperA', 'broccoli1', 'iconItemLettuce',   
-                         'carrot1', 'eggplant1', 'cornIcon1', 'potato1', 'turnip1', 'peas1', 'brusselSprouts1'] )
+                        'carrot1', 'eggplant1', 'cornIcon1', 'potato1', 'turnip1', 'peas1', 'brusselSprouts1'] )
         
+        
+
     </script>
 </body>
 </html>
