@@ -13,10 +13,12 @@
 </head>
 <body>
     <div id="container"></div>
+
+    <button id="start-button">START/Reset</button>
     <script>
         //Add a container to the body and add CSS to it, using jQuery: 
         var $container = $('#container') 
-        $container.css( {width: '800px', height: '500px', background: 'green'} )
+        $container.css( {width: '800px', height: '530px', background: 'green'} )
 
         //Append 12 images to the container (it's the game board PART 1)...
         var $tomato1 = $('<img src="images/tomato.png" class="food" data-name="tomato">')
@@ -55,42 +57,91 @@
         var $brusselSprouts1 = $('<img src="images/Brussel_Sprouts.png" class="food" data-name="Brussel sprouts">')
         $container.append($brusselSprouts1)
 
-
-        var $tomato2 = $('<img src="images/tomato.png" class="food" data-name="tomato">')
-        $container.append($tomato2)
-
-        var $cucumber2 = $('<img src="images/cucumber-icon.png" class="food" data-name="cucumber">')
-        $container.append($cucumber2)
-
-        var $redPepperB = $('<img src="images/Red_Pepper.png" class="food" data-name="red pepper">')
-        $container.append($redPepperB)
-
-        var $broccoli2 = $('<img src="images/broccoli.png" class="food" data-name="broccoli">')
-        $container.append($broccoli2)
-
-        var $iconItemLettuce2 = $('<img src="images/icon_item_lettuce.png" class="food" data-name="lettuce">')
-        $container.append($iconItemLettuce2)
-
-        var $carrot2 = $('<img src="images/Carrot.png" class="food" data-name="carrot">')
-        $container.append($carrot2)
-
-        var $eggplant2 = $('<img src="images/Eggplant-icon.png" class="food" data-name="eggplant">')
-        $container.append($eggplant2)
-
-        var $cornIcon2 = $('<img src="images/Corn-icon.png" class="food" data-name="corn">')
-        $container.append($cornIcon2)
-
-        var $potato2 = $('<img src="images/potato.png" class="food" data-name="potato">')
-        $container.append($potato2)
-
-        var $turnip2 = $('<img src="images/Turnip.png" class="food" data-name="turnip">')
-        $container.append($turnip2)
+         //Append the same 12 images to the container but with a variation in the var name 
+         // (it's the game board PART 2)...
+        var $brusselSprouts2 = $('<img src="images/Brussel_Sprouts.png" class="food" data-name="Brussel sprouts">')
+        $container.append($brusselSprouts2)
 
         var $peas2 = $('<img src="images/peas.png" class="food" data-name="peas">')
         $container.append($peas2)
 
-        var $brusselSprouts2 = $('<img src="images/Brussel_Sprouts.png" class="food" data-name="Brussel sprouts">')
-        $container.append($brusselSprouts2)
+        var $turnip2 = $('<img src="images/Turnip.png" class="food" data-name="turnip">')
+        $container.append($turnip2)
+
+        var $potato2 = $('<img src="images/potato.png" class="food" data-name="potato">')
+        $container.append($potato2)
+
+        var $cornIcon2 = $('<img src="images/Corn-icon.png" class="food" data-name="corn">')
+        $container.append($cornIcon2)
+
+        var $eggplant2 = $('<img src="images/Eggplant-icon.png" class="food" data-name="eggplant">')
+        $container.append($eggplant2)
+
+        var $carrot2 = $('<img src="images/Carrot.png" class="food" data-name="carrot">')
+        $container.append($carrot2)
+
+        var $iconItemLettuce2 = $('<img src="images/icon_item_lettuce.png" class="food" data-name="lettuce">')
+        $container.append($iconItemLettuce2)
+
+        var $broccoli2 = $('<img src="images/broccoli.png" class="food" data-name="broccoli">')
+        $container.append($broccoli2)
+
+        var $redPepperB = $('<img src="images/Red_Pepper.png" class="food" data-name="red pepper">')
+        $container.append($redPepperB)
+
+        var $cucumber2 = $('<img src="images/cucumber-icon.png" class="food" data-name="cucumber">')
+        $container.append($cucumber2)
+
+        var $tomato2 = $('<img src="images/tomato.png" class="food" data-name="tomato">')
+        $container.append($tomato2)
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+        
+
+        
+
+        
+
+        
+
+        
+        
+
+        
+
+        
+
+       
+
+       
+
+        
 
 
 

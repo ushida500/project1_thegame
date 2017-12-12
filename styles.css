@@ -3,5 +3,22 @@ body{
     background-size: cover;
 }
 
+#container {
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-top: 20px; 
+    padding-left: 15px; 
+    border: solid black; 
 
+}
+
+#start-button {
+    color: white;
+    font-size: 20px;
+    background-color: green; 
+    border: solid black;
+    position: absolute;
+    top: 30px;
+    right: 150px; 
+}
 
