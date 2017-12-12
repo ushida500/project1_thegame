@@ -14,44 +14,45 @@
 <body>
     <div id="container"></div>
     <script>
-        //Append 12 images to the container (it's the game board)...
+        //Add a container to the body and add CSS to it, using jQuery: 
         var $container = $('#container') 
         $container.css({width: '550px', height: '550px', background: 'green'})
 
-        var $tomato1 = $('<img src="images/tomato.png">')
+        //Append 12 images to the container (it's the game board)...
+        var $tomato1 = $('<img src="images/tomato.png" class="food" data-name="tomato">')
         $container.append($tomato1)
 
-        var $cucumber1 = $('<img src="images/cucumber-icon.png">')
+        var $cucumber1 = $('<img src="images/cucumber-icon.png" class="food" data-name="cucumber">')
         $container.append($cucumber1)
 
-        var $redPepperA = $('<img src="images/Red_Pepper.png">')
+        var $redPepperA = $('<img src="images/Red_Pepper.png" class="food" data-name="red pepper">')
         $container.append($redPepperA)
 
-        var $broccoli1 = $('<img src="images/broccoli.png">')
+        var $broccoli1 = $('<img src="images/broccoli.png" class="food" data-name="broccoli">')
         $container.append($broccoli1)
 
-        var $iconItemLettuce = $('<img src="images/icon_item_lettuce.png">')
+        var $iconItemLettuce = $('<img src="images/icon_item_lettuce.png" class="food" data-name="lettuce">')
         $container.append($iconItemLettuce)
 
-        var $carrot1 = $('<img src="images/Carrot.png">')
+        var $carrot1 = $('<img src="images/Carrot.png" class="food" data-name="carrot">')
         $container.append($carrot1)
 
-        var $eggplant1 = $('<img src="images/Eggplant-icon.png">')
+        var $eggplant1 = $('<img src="images/Eggplant-icon.png" class="food" data-name="eggplant">')
         $container.append($eggplant1)
 
-        var $cornIcon1 = $('<img src="images/Corn-icon.png">')
+        var $cornIcon1 = $('<img src="images/Corn-icon.png" class="food" data-name="corn">')
         $container.append($cornIcon1)
 
-        var $potato1 = $('<img src="images/potato.png">')
+        var $potato1 = $('<img src="images/potato.png" class="food" data-name="potato">')
         $container.append($potato1)
 
-        var $turnip1 = $('<img src="images/Turnip.png">')
+        var $turnip1 = $('<img src="images/Turnip.png" class="food" data-name="turnip">')
         $container.append($turnip1)
 
-        var $peas1 = $('<img src="images/peas.png">')
+        var $peas1 = $('<img src="images/peas.png" class="food" data-name="peas">')
         $container.append($peas1)
 
-        var $brusselSprouts1 = $('<img src="images/Brussel_Sprouts.png">')
+        var $brusselSprouts1 = $('<img src="images/Brussel_Sprouts.png" class="food" data-name="Brussel sprouts">')
         $container.append($brusselSprouts1)
 
         //Generate 12 boxes to include the game elements...
@@ -60,11 +61,23 @@
         //}
         //var $boxes = $('.box')
 
-        var $veggies = $( ['tomato1', 'cucumber1', 'redPepperA', 'broccoli1', 'iconItemLettuce',   
-                        'carrot1', 'eggplant1', 'cornIcon1', 'potato1', 'turnip1', 'peas1', 'brusselSprouts1'] )
-        
-        
 
+        //This function is to get the food by name... 
+        $food = $('.food')
+
+        $food.on('click', function() {
+	        var foodName = $(this).data('name')
+            console.log(foodName)
+        })
+
+
+
+
+
+
+        //Trying to do an array with all veggies names: 
+        //var $veggies = $( ['tomato1', 'cucumber1', 'redPepperA', 'broccoli1', 'iconItemLettuce',   
+         //              'carrot1', 'eggplant1', 'cornIcon1', 'potato1', 'turnip1', 'peas1', 'brusselSprouts1'] )
     </script>
 </body>
 </html>
