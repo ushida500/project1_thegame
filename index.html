@@ -62,37 +62,37 @@
         var $brusselSprouts2 = $('<img src="images/Brussel_Sprouts.png" class="more-food" data-name="Brussel sprouts">')
         $container.append($brusselSprouts2)
 
-        var $peas2 = $('<img src="images/peas.png" class="food" data-name="peas">')
+        var $peas2 = $('<img src="images/peas.png" class="more-food" data-name="peas">')
         $container.append($peas2)
 
-        var $turnip2 = $('<img src="images/Turnip.png" class="food" data-name="turnip">')
+        var $turnip2 = $('<img src="images/Turnip.png" class="more-food" data-name="turnip">')
         $container.append($turnip2)
 
-        var $potato2 = $('<img src="images/potato.png" class="food" data-name="potato">')
+        var $potato2 = $('<img src="images/potato.png" class="more-food" data-name="potato">')
         $container.append($potato2)
 
-        var $cornIcon2 = $('<img src="images/Corn-icon.png" class="food" data-name="corn">')
+        var $cornIcon2 = $('<img src="images/Corn-icon.png" class="more-food" data-name="corn">')
         $container.append($cornIcon2)
 
-        var $eggplant2 = $('<img src="images/Eggplant-icon.png" class="food" data-name="eggplant">')
+        var $eggplant2 = $('<img src="images/Eggplant-icon.png" class="more-food" data-name="eggplant">')
         $container.append($eggplant2)
 
-        var $carrot2 = $('<img src="images/Carrot.png" class="food" data-name="carrot">')
+        var $carrot2 = $('<img src="images/Carrot.png" class="more-food" data-name="carrot">')
         $container.append($carrot2)
 
-        var $iconItemLettuce2 = $('<img src="images/icon_item_lettuce.png" class="food" data-name="lettuce">')
+        var $iconItemLettuce2 = $('<img src="images/icon_item_lettuce.png" class="more-food" data-name="lettuce">')
         $container.append($iconItemLettuce2)
 
-        var $broccoli2 = $('<img src="images/broccoli.png" class="food" data-name="broccoli">')
+        var $broccoli2 = $('<img src="images/broccoli.png" class="more-food" data-name="broccoli">')
         $container.append($broccoli2)
 
-        var $redPepperB = $('<img src="images/Red_Pepper.png" class="food" data-name="red pepper">')
+        var $redPepperB = $('<img src="images/Red_Pepper.png" class="more-food" data-name="red pepper">')
         $container.append($redPepperB)
 
-        var $cucumber2 = $('<img src="images/cucumber-icon.png" class="food" data-name="cucumber">')
+        var $cucumber2 = $('<img src="images/cucumber-icon.png" class="more-food" data-name="cucumber">')
         $container.append($cucumber2)
 
-        var $tomato2 = $('<img src="images/tomato.png" class="food" data-name="tomato">')
+        var $tomato2 = $('<img src="images/tomato.png" class="more-food" data-name="tomato">')
         $container.append($tomato2)
 
         // $broccoli.hasClass('broccoli')
@@ -104,11 +104,21 @@
 
         //This function is to get the food by name... 
         $food = $('.food')
+        var card1 = null
+        var card2 = null
 
         $food.on('click', function() {
 	        var foodName = $(this).data('name')
-            console.log(foodName)
+            card1 = foodName
+            console.log('card 1 is ' + card1)
         })
+
+        checkMatch() {
+            if (card1 === card2 && ) {
+
+            }
+        }
+
 
 
         //This function stops the clicks to be double (for example, 
@@ -116,9 +126,13 @@
         $food2 = $('.more-food')
 
         $food2.on('click', function() {
-            var foodName = $(this).data('name')
-            console.log(foodName)
+            var foodName2 = $(this).data('name')
+            card2 = foodName2
+            console.log('card 2 is ' + card2)
         })
+
+
+        
 
 
 
