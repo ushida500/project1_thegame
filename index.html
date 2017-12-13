@@ -59,7 +59,7 @@
 
          //Append the same 12 images to the container but with a variation in the var name 
          // (it's the game board PART 2)...
-        var $brusselSprouts2 = $('<img src="images/Brussel_Sprouts.png" class="food" data-name="Brussel sprouts">')
+        var $brusselSprouts2 = $('<img src="images/Brussel_Sprouts.png" class="more-food" data-name="Brussel sprouts">')
         $container.append($brusselSprouts2)
 
         var $peas2 = $('<img src="images/peas.png" class="food" data-name="peas">')
@@ -95,62 +95,11 @@
         var $tomato2 = $('<img src="images/tomato.png" class="food" data-name="tomato">')
         $container.append($tomato2)
 
-        
+        // $broccoli.hasClass('broccoli')
 
+        // $broccoli1.data('name') {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-
-        
-
-        
-
-        
-
-        
-
-        
-        
-
-        
-
-        
-
-       
-
-       
-
-        
-
-
-
-
-        //Generate 24 boxes to include the game elements...
-        // for(var i = 0; i < 24; i += 1) {
-        //      $container.append('<div class="box"></div>')
-        //}
-        //var $boxes = $('.box')
+       // }
 
 
         //This function is to get the food by name... 
@@ -162,13 +111,29 @@
         })
 
 
+        //This function stops the clicks to be double (for example, 
+        // if I click on the tomato, it trigger both images of tomatoes)
+        $food2 = $('.more-food')
+
+        $food2.on('click', function() {
+            var foodName = $(this).data('name')
+            console.log(foodName)
+        })
 
 
 
 
-        //Trying to do an array with all veggies names: 
-        //var $veggies = $( ['tomato1', 'cucumber1', 'redPepperA', 'broccoli1', 'iconItemLettuce',   
-         //              'carrot1', 'eggplant1', 'cornIcon1', 'potato1', 'turnip1', 'peas1', 'brusselSprouts1'] )
+
+        //Do an array with all veggies names: 
+        //var $veggies = $(['tomato1', 'cucumber1', 'redPepperA', 'broccoli1', 'iconItemLettuce',   
+         //              'carrot1', 'eggplant1', 'cornIcon1', 'potato1', 'turnip1', 'peas1', 'brusselSprouts1'])
+
+         //Generate 24 boxes to include the game elements...
+        // for(var i = 0; i < 24; i += 1) {
+        //    $container.append('<div class="box"></div>')
+        //}
+        //var $boxes = $('.box')
+
     </script>
 </body>
 </html>
