@@ -95,42 +95,23 @@
         var $tomato2 = $('<img src="images/tomato.png" class="more-food" data-name="tomato">')
         $container.append($tomato2)
 
-        // $broccoli.hasClass('broccoli')
-
-        // $broccoli1.data('name') {
-
-       // }
-
-
-        //This function is to get the food by name... 
+        // This function make the food images clickable through the DOM 
+        // (using a class and the function data)
         $food = $('.food')
-        var card1 = null
-        var card2 = null
 
         $food.on('click', function() {
 	        var foodName = $(this).data('name')
-            card1 = foodName
-            console.log('card 1 is ' + card1)
+   	        console.log(foodName)
         })
 
-        checkMatch() {
-            if (card1 === card2 && ) {
-
-            }
-        }
-
-
-
         //This function stops the clicks to be double (for example, 
-        // if I click on the tomato, it trigger both images of tomatoes)
+        // if I click on the tomato, it used to trigger both images)
         $food2 = $('.more-food')
 
         $food2.on('click', function() {
             var foodName2 = $(this).data('name')
-            card2 = foodName2
-            console.log('card 2 is ' + card2)
+            console.log(foodName2)
         })
-
 
         
 
@@ -138,11 +119,17 @@
 
 
 
-        //Do an array with all veggies names: 
+
+
+        // $broccoli.hasClass('broccoli')
+        // $broccoli1.data('name') {
+        // }
+
+        //***Do an array with all veggies names*** 
         //var $veggies = $(['tomato1', 'cucumber1', 'redPepperA', 'broccoli1', 'iconItemLettuce',   
          //              'carrot1', 'eggplant1', 'cornIcon1', 'potato1', 'turnip1', 'peas1', 'brusselSprouts1'])
 
-         //Generate 24 boxes to include the game elements...
+        //Generate 24 boxes to include the game elements...
         // for(var i = 0; i < 24; i += 1) {
         //    $container.append('<div class="box"></div>')
         //}
