@@ -10,117 +10,165 @@
     src="http://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+    <style>
+        .food-container{
+            display: inline-block;
+            border: 0.65px solid black;
+        }
+    </style>
 </head>
 <body>
     <div id="container"></div>
 
-    <button id="start-button">START/Reset</button>
+    <button id="start-button">🍎🍆START🍆🍎</button>
+
+    <button id="reset-button">🍎🍎RESET🍎🍎</button>
+
+    <div id="counter">SCORE 1🌽</div>
+
+    <div id="counter2">SCORE 2🍠</div>
+
     <script>
+        // Button to start the game and trigger a message: 
+        var $btnStart = $('#start-button')
+
+        $btnStart.on('click', function() {
+            $(this).hide(1000, function() {
+            alert("Game on!") 
+            $(this).show()
+            })
+       })
+
         //Add a container to the body and add CSS to it, using jQuery: 
         var $container = $('#container') 
         $container.css( {width: '800px', height: '530px', background: 'green'} )
 
         //Append 12 images to the container (it's the game board PART 1)...
-        var $tomato1 = $('<img src="images/tomato.png" class="food" data-name="tomato">')
+        var $tomato1 = $('<div class="food-container"><img src="images/tomato.png" class="food" data-name="tomato"></div>')
         $container.append($tomato1)
 
-        var $cucumber1 = $('<img src="images/cucumber-icon.png" class="food" data-name="cucumber">')
+        var $cucumber1 = $('<div class="food-container"><img src="images/cucumber-icon.png" class="food" data-name="cucumber"></div>')
         $container.append($cucumber1)
 
-        var $redPepperA = $('<img src="images/Red_Pepper.png" class="food" data-name="red pepper">')
+        var $redPepperA = $('<div class="food-container"><img src="images/Red_Pepper.png" class="food" data-name="red pepper"></div>')
         $container.append($redPepperA)
 
-        var $broccoli1 = $('<img src="images/broccoli.png" class="food" data-name="broccoli">')
+        var $broccoli1 = $('<div class="food-container"><img src="images/broccoli.png" class="food" data-name="broccoli"></div>')
         $container.append($broccoli1)
 
-        var $iconItemLettuce = $('<img src="images/icon_item_lettuce.png" class="food" data-name="lettuce">')
+        var $iconItemLettuce = $('<div class="food-container"><img src="images/icon_item_lettuce.png" class="food" data-name="lettuce"></div>')
         $container.append($iconItemLettuce)
 
-        var $carrot1 = $('<img src="images/Carrot.png" class="food" data-name="carrot">')
+        var $carrot1 = $('<div class="food-container"><img src="images/Carrot.png" class="food" data-name="carrot"></div>')
         $container.append($carrot1)
 
-        var $eggplant1 = $('<img src="images/Eggplant-icon.png" class="food" data-name="eggplant">')
+        var $eggplant1 = $('<div class="food-container"><img src="images/Eggplant-icon.png" class="food" data-name="eggplant"></div>')
         $container.append($eggplant1)
 
-        var $cornIcon1 = $('<img src="images/Corn-icon.png" class="food" data-name="corn">')
+        var $cornIcon1 = $('<div class="food-container"><img src="images/Corn-icon.png" class="food" data-name="corn"></div>')
         $container.append($cornIcon1)
 
-        var $potato1 = $('<img src="images/potato.png" class="food" data-name="potato">')
+        var $potato1 = $('<div class="food-container"><img src="images/potato.png" class="food" data-name="potato"></div>')
         $container.append($potato1)
 
-        var $turnip1 = $('<img src="images/Turnip.png" class="food" data-name="turnip">')
+        var $turnip1 = $('<div class="food-container"><img src="images/Turnip.png" class="food" data-name="turnip"></div>')
         $container.append($turnip1)
 
-        var $peas1 = $('<img src="images/peas.png" class="food" data-name="peas">')
+        var $peas1 = $('<div class="food-container"><img src="images/peas.png" class="food" data-name="peas"></div>')
         $container.append($peas1)
 
-        var $brusselSprouts1 = $('<img src="images/Brussel_Sprouts.png" class="food" data-name="Brussel sprouts">')
+        var $brusselSprouts1 = $('<div class="food-container"><img src="images/Brussel_Sprouts.png" class="food" data-name="Brussel sprouts"></div>')
         $container.append($brusselSprouts1)
 
          //Append the same 12 images to the container but with a variation in the var name 
          // (it's the game board PART 2)...
-        var $brusselSprouts2 = $('<img src="images/Brussel_Sprouts.png" class="more-food" data-name="Brussel sprouts">')
+        var $brusselSprouts2 = $('<div class="food-container"><img src="images/Brussel_Sprouts.png" class="food" data-name="Brussel sprouts"></div>')
         $container.append($brusselSprouts2)
 
-        var $peas2 = $('<img src="images/peas.png" class="more-food" data-name="peas">')
+        var $peas2 = $('<div class="food-container"><img src="images/peas.png" class="food" data-name="peas"></div>')
         $container.append($peas2)
 
-        var $turnip2 = $('<img src="images/Turnip.png" class="more-food" data-name="turnip">')
+        var $turnip2 = $('<div class="food-container"><img src="images/Turnip.png" class="food" data-name="turnip"></div>')
         $container.append($turnip2)
 
-        var $potato2 = $('<img src="images/potato.png" class="more-food" data-name="potato">')
+        var $potato2 = $('<div class="food-container"><img src="images/potato.png" class="food" data-name="potato"></div>')
         $container.append($potato2)
 
-        var $cornIcon2 = $('<img src="images/Corn-icon.png" class="more-food" data-name="corn">')
+        var $cornIcon2 = $('<div class="food-container"><img src="images/Corn-icon.png" class="food" data-name="corn"></div>')
         $container.append($cornIcon2)
 
-        var $eggplant2 = $('<img src="images/Eggplant-icon.png" class="more-food" data-name="eggplant">')
+        var $eggplant2 = $('<div class="food-container"><img src="images/Eggplant-icon.png" class="food" data-name="eggplant"></div>')
         $container.append($eggplant2)
 
-        var $carrot2 = $('<img src="images/Carrot.png" class="more-food" data-name="carrot">')
+        var $carrot2 = $('<div class="food-container"><img src="images/Carrot.png" class="food" data-name="carrot"></div>')
         $container.append($carrot2)
 
-        var $iconItemLettuce2 = $('<img src="images/icon_item_lettuce.png" class="more-food" data-name="lettuce">')
+        var $iconItemLettuce2 = $('<div class="food-container"><img src="images/icon_item_lettuce.png" class="food" data-name="lettuce"></div>')
         $container.append($iconItemLettuce2)
 
-        var $broccoli2 = $('<img src="images/broccoli.png" class="more-food" data-name="broccoli">')
+        var $broccoli2 = $('<div class="food-container"><img src="images/broccoli.png" class="food" data-name="broccoli"></div>')
         $container.append($broccoli2)
 
-        var $redPepperB = $('<img src="images/Red_Pepper.png" class="more-food" data-name="red pepper">')
+        var $redPepperB = $('<div class="food-container"><img src="images/Red_Pepper.png" class="food" data-name="red pepper"></div>')
         $container.append($redPepperB)
 
-        var $cucumber2 = $('<img src="images/cucumber-icon.png" class="more-food" data-name="cucumber">')
+        var $cucumber2 = $('<div class="food-container"><img src="images/cucumber-icon.png" class="food" data-name="cucumber"></div>')
         $container.append($cucumber2)
 
-        var $tomato2 = $('<img src="images/tomato.png" class="more-food" data-name="tomato">')
+        var $tomato2 = $('<div class="food-container"><img src="images/tomato.png" class="food" data-name="tomato"></div>')
         $container.append($tomato2)
 
         // This function make the food images clickable through the DOM 
         // (using a class and the function data)
         $food = $('.food')
+        $foodName = $('data-name')
 
+        var card1;
+        var card2;
+        var $card1;
+        var $card2;
+        var cardsFlip = 0;
+ 
         $food.on('click', function() {
+            cardsFlip++;
 	        var foodName = $(this).data('name')
-   	        console.log(foodName)
+             console.log(foodName)
+             console.log(cardsFlip)
+             $(this).css('opacity', 1)
+             // saving the card clicked
+             if (cardsFlip === 1) {
+                card1 = foodName
+                $card1 = $(this)
+             } else if (cardsFlip === 2) {
+                card2 = foodName
+                $card2 = $(this)
+             }
+             checkMatch(card1, card2, $card1, $card2)
         })
 
-        //This function stops the clicks to be double (for example, 
-        // if I click on the tomato, it used to trigger both images)
-        $food2 = $('.more-food')
+        $food.css('opacity', 0) 
 
-        $food2.on('click', function() {
-            var foodName2 = $(this).data('name')
-            console.log(foodName2)
-        })
+        function checkMatch(card1, card2, $card1, $card2) {
+            console.log('check match function')
+            console.log(card1, card2)
+            console.log($card1, $card2)
+            if (card1 && card2 && cardsFlip === 2) {
+                console.log('two cards clicked')
+                if (card1 === card2) {
+                    console.log("It's a match")
+                    cardsFlip = 0
+                } else {
+                    console.log("No match!")
+                    cardsFlip = 0
+                    setTimeout(function(){
+                        $card1.css('opacity', 0)
+                        $card2.css('opacity', 0)
+                    }, 1000)
+                }
 
+            }
+        }
         
-
-
-
-
-
-
-
         // $broccoli.hasClass('broccoli')
         // $broccoli1.data('name') {
         // }
@@ -134,7 +182,6 @@
         //    $container.append('<div class="box"></div>')
         //}
         //var $boxes = $('.box')
-
     </script>
 </body>
 </html>

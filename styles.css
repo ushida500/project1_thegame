@@ -9,7 +9,6 @@ body{
     padding-top: 20px; 
     padding-left: 15px; 
     border: solid black; 
-
 }
 
 #start-button {
@@ -17,8 +16,47 @@ body{
     font-size: 20px;
     background-color: green; 
     border: solid black;
+    border-radius: 5px;
     position: absolute;
     top: 30px;
     right: 150px; 
 }
+
+#reset-button {
+    color: white;
+    font-size: 20px;
+    background-color: green; 
+    border: solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 100px;
+    right: 150px; 
+}
+
+
+#counter {
+    position: absolute;
+    top: 175px;
+    right: 180px; 
+    width: 90px;
+    height: 50px;
+    border: solid black;
+    border-radius: 5px; 
+    text-align: center;
+    color: white;
+    background: green;
+}
+
+#counter2 {
+        position: absolute;
+        top: 260px;
+        right: 180px; 
+        width: 90px;
+        height: 50px;
+        border: solid black;
+        border-radius: 5px; 
+        text-align: center;
+        color: white;
+        background: green;
+    }
 
