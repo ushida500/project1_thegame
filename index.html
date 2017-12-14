@@ -131,6 +131,7 @@
         var scoreTw0 = 0;
  
         // This functions make the food images clickable through the DOM (using a class and the function data)
+        // and let the game develop, using the style of "cards flipping" to recognize the match. 
         $food.on('click', function() {
             cardsFlip++;
 	        var foodName = $(this).data('name')
@@ -162,7 +163,7 @@
                     // Increase the score 
                     scoreOne = scoreOne +1
                     //console.log(scoreOne)
-                    $('#counter').text('SCORE 1: '+ scoreOne);
+                    $('#counter').text('SCORE 1: ' + scoreOne);
                 } else {
                     console.log("No match!")
                     cardsFlip = 0
