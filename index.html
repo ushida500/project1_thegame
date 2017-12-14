@@ -118,8 +118,7 @@
         var $tomato2 = $('<div class="food-container"><img src="images/tomato.png" class="food" data-name="tomato"></div>')
         $container.append($tomato2)
 
-        // This function make the food images clickable through the DOM 
-        // (using a class and the function data)
+        // Variables to start and play the game...
         $food = $('.food')
         $foodName = $('data-name')
 
@@ -129,6 +128,7 @@
         var $card2;
         var cardsFlip = 0;
  
+        // This functions make the food images clickable through the DOM (using a class and the function data)
         $food.on('click', function() {
             cardsFlip++;
 	        var foodName = $(this).data('name')
@@ -168,7 +168,7 @@
 
             }
         }
-        //Deyka
+        
         // $broccoli.hasClass('broccoli')
         // $broccoli1.data('name') {
         // }
