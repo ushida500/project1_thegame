@@ -127,6 +127,8 @@
         var $card1;
         var $card2;
         var cardsFlip = 0;
+        var scoreOne = 0;
+        var scoreTw0 = 0;
  
         // This functions make the food images clickable through the DOM (using a class and the function data)
         $food.on('click', function() {
@@ -157,6 +159,10 @@
                 if (card1 === card2) {
                     console.log("It's a match")
                     cardsFlip = 0
+                    // Increase the score 
+                    scoreOne = scoreOne +1
+                    //console.log(scoreOne)
+                    $('#counter').text('SCORE 1: '+ scoreOne);
                 } else {
                     console.log("No match!")
                     cardsFlip = 0
