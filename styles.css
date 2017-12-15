@@ -33,16 +33,18 @@ body{
     background-color: green; 
     border: solid black;
     border-radius: 5px;
+    width: 150px;
+    height: 40px; 
     position: absolute;
     top: 100px;
-    right: 150px; 
+    right: 157px; 
     
 }
 
 
 #counter {
     position: absolute;
-    top: 175px;
+    top: 190px;
     right: 180px; 
     width: 100px;
     height: 50px;
@@ -66,8 +68,5 @@ body{
         background: green;
     }
 
-    #time {
-        position: absolute;
-
-    }
+    
 

@@ -7,7 +7,7 @@
 
 
 ###Simple, fun and challenging (just to escape from the boring daily commuting or waiting in the doctor's office!)
-Designed for one or two players, this game is about using your memory to pick the same images in less than 10 seconds, and make a match (or several). The player that get more matches will be the winner. So almost everybody likes a good, colorful, and fresh veggie. [Play it!](https://code.jquery.com/)
+Designed for one or two players, this game is about using your memory to pick the same images in less than 10 seconds, and make a match (or several). The player that get more matches will be the winner. So almost everybody likes a good, colorful, and fresh veggie. [Play it!](https://ushida500.github.io/project1_thegame/)
 
 #Let's play!
 This is a very simple online game. Why? Do this... 

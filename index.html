@@ -16,7 +16,7 @@
 
     <button id="start-button">🍎🍆START🍆🍎</button>
 
-    <div id="time">🍎🍎TIMER🍎🍎</div>
+    <div id="time">TIMER</div>
 
     <div id="counter">SCORE 1🌽</div>
 
@@ -55,13 +55,14 @@
             gameTimer = setInterval(function() {
                 time = time - 1
                 console.log(time)
-
+                $('#time').text('TIMER: ' + time)
                 if(time <= 0) {
                     clearInterval(gameTimer)
                     console.log("The timer is finished!")
                     gameFinished()
                 }
             }, 1000)
+            
 
        })
 
