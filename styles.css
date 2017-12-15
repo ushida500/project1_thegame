@@ -11,6 +11,11 @@ body{
     border: solid black; 
 }
 
+.food-container{
+    display: inline-block;
+    border: 0.65px solid black;
+}
+
 #start-button {
     color: white;
     font-size: 20px;

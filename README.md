@@ -7,7 +7,7 @@
 
 
 ###Simple, fun and not so challenging (just to escape from the boring daily commuting or waiting in the doctor's office!)
-Designed for one or two players, this game is about picking the same vegetable images in less than 10 seconds. The fastest player will be the winner. So almost everybody likes a good, colorful, and fresh veggie. Play it!
+Designed for one or two players, this game is about picking the same images in less than 10 seconds. The fastest player will be the winner. So almost everybody likes a good, colorful, and fresh veggie. Play it!
 
 #Let's play!
 This is a very simple online game. Why? Do this... 
@@ -35,8 +35,22 @@ HTML was used to develop the basic structure of the game, like the buttons and t
 ###Javascript and JQuery
 The secret to make the game dynamic is to add Javascript functions and a jQuery library. Find the library [here](https://code.jquery.com/)
 
+Using this languages, I was able to build a game that hide and show the elements, make images clickable, include different events (actions or effects) through the game, manage the score, switch the players turns and much more!
+
+###Resources
+
+- JQuery libraries: http://code.jquery.com
+- Images, vectors, textures and more: www.freepik.com
+- Work images for different platforms: www.imgur.com
 
 ###Future additions
+
+It will be very positive to work in new features for the game:
+
+- Animation for the background 
+- New scores and timer screens 
+- Add music and sound effects
+- Deploy it in different devices
 
 ##SUMMARY 
 - Name of the game: Match The Veggies! 
