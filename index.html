@@ -25,9 +25,9 @@
     <script>
 
         // checklist:
-        // 1. display the remaining time on the screen (right now it's only in the console)
+        // 1. display the remaining time on the screen (right now it's only in the console) - DONE!
         // 2. We need to see who's turn it is when the game starts...
-        // 3. Hide the food when the next round begins
+        // 3. Hide the food when the next round begins - DONE!
         // 4. BONUS: Make the food appear in a random order every time you play...
 
 
@@ -59,6 +59,7 @@
                 if(time <= 0) {
                     clearInterval(gameTimer)
                     console.log("The timer is finished!")
+                    $food.css('opacity', 0) 
                     gameFinished()
                 }
             }, 1000)
